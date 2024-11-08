@@ -8,9 +8,25 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <title>Tavoradar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            color: #333232;
+        }
+    </style>
 </head>
 
-<body>
+<body class="xl-container">
     <header class="d-flex container-xl align-items-center justify-content-center justify-content-sm-between p-2 ">
         <div class="d-flex align-items-center gap-3 justify-content-center flex-column me-4">
             <img width=" 200" height="87" src="./assets/icons/Logo.png" alt="">
@@ -62,7 +78,7 @@
             </div>
         </div>
     </header>
-    <div style="width: 100%;" id="carouselExampleFade" class="carousel slide carousel-fade xl-container mt-5 mb-3">
+    <div style="width: 100%;" id="carouselExampleFade" class="carousel slide carousel-fade xl-container mt-5 ">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./assets/imgs/hero img.png" class="d-block w-100" alt="...">
@@ -83,9 +99,166 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <div>
-        <h2>salom</h2>
+    <div class="container text-center mt-5 ">
+        <div height="300" class="row  gap-3">
+            <div style="height: 290px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center flex-column">
+                <img width="200" height="200" src="./assets/imgs/cart1-tv.png" alt="">
+                <p>Электроника</p>
+            </div>
+            <div style="height: 290px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center flex-column">
+                <img width="200" height="200" src="./assets/imgs/cart-washing-machine.png" alt="">
+                <p>Быловые товары</p>
+            </div>
+            <div style="height: 290px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc;"
+                class="col d-flex align-items-center justify-content-center flex-column">
+                <img width="200" height="200" src="./assets/imgs/books.png" alt="">
+                <p>Книги, хобби, канцелярия</p>
+            </div>
+            <div style="height: 290px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center flex-column">
+                <img width="200" height="200" src="./assets/imgs/foods.png" alt="">
+                <p>Продукты питания</p>
+            </div>
+            <!-- mini carts -->
+        </div>
+        <div height="300" class="row  gap-3 mt-3">
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; 
+            " class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/toys.svg" alt="">
+                <p>Детские товары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/clothes.svg" alt="">
+                <p>Одежда, обувь и аксессуары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc;"
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/zoo.svg" alt="">
+                <p>Зоотовары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/parfume.svg" alt="">
+                <p>Красота и уход</p>
+            </div>
+        </div>
+        <div height="300" class="row  gap-3 mt-3">
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; 
+            " class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/leyka.svg" alt="">
+                <p>Детские товары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/bike.svg" alt="">
+                <p>Одежда, обувь и аксессуары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc;"
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/kastrule.svg" alt="">
+                <p>Зоотовары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/table.svg" alt="">
+                <p>Красота и уход</p>
+            </div>
+        </div>
+        <div height="300" class="row  gap-3 mt-3">
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc;"
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/zoo.svg" alt="">
+                <p>Зоотовары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/cart-washing-machine.png" alt="">
+                <p>Одежда, обувь и аксессуары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc;"
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/drel.svg" alt="">
+                <p>Зоотовары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/books.png" alt="">
+                <p>Красота и уход</p>
+            </div>
+        </div>
+        <div height="300" class="row  gap-3 mt-3">
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc;"
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/balon.svg" alt="">
+                <p>Зоотовары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/parfume.svg" alt="">
+                <p>Одежда, обувь и аксессуары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/toy2.svg" alt="">
+                <p>Одежда, обувь и аксессуары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/zoo.svg" alt="">
+                <p>Красота и уход</p>
+            </div>
+        </div>
+        <div height="300" class="row  gap-3 mt-3">
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc;"
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/table.svg" alt="">
+                <p>Зоотовары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/toy2.svg" alt="">
+                <p>Одежда, обувь и аксессуары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/toy2.svg" alt="">
+                <p>Одежда, обувь и аксессуары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/leyka.svg" alt="">
+                <p>Красота и уход</p>
+            </div>
+        </div>
+        <div height="300" class="row  gap-3 mt-3">
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; 
+            " class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/leyka.svg" alt="">
+                <p>Детские товары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc; "
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/bike.svg" alt="">
+                <p>Одежда, обувь и аксессуары</p>
+            </div>
+            <div style="height: 145px; width: 290px; border-radius: 10px; box-shadow: 4px 2px 4px 0 rgba(0, 0, 0, 0.1);background: #fcfffc;"
+                class="col d-flex align-items-center justify-content-center gap-2">
+                <img width="200" height="140" src="./assets/imgs/mack.svg" alt="">
+                <p>Зоотовары</p>
+            </div>
+            <div class="col d-flex align-items-center justify-content-center gap-2">
+
+
+            </div>
+        </div>
+
     </div>
+
+
+
 
 
 
