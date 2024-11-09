@@ -69,7 +69,8 @@
             <div class="d-flex align-items-center gap-3 justify-content-center text-decoration-none text-black">
                 <div class="d-flex align-items-center gap-1 flex-column text-decoration-none">
                     <img src="./assets/icons/User.svg" alt="">
-                    <a class="text-decoration-none text-black" href="#">Войти</a>
+                    <a class="text-decoration-none text-black" data-bs-toggle="modal" data-bs-target="#loginModal"
+                        href="#">Войти</a>
                 </div>
                 <div class="d-flex align-items-center gap-1 flex-column text-decoration-none">
                     <img src="./assets/icons/handbag_shopping_icon.svg" alt="">
@@ -85,7 +86,24 @@
                 </div>
             </div>
         </div>
+        <div>
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title fw-bold fs-4" id="loginModalLabel">
+                                Войдите по почте
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="email" placeholder="e-mail" />
+                                </div>
     </header>
+
     <div " id=" carouselExampleFade" class="carousel slide carousel-fade xl-container mt-5 ">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -543,7 +561,7 @@
     </div>
     <footer style="background-color:  #eef1f2;" class="bg-light-subtle p-2">
         <div class="container-xl mt-5 d-flex justify-content-between gap-5">
-            <div data-aos="fade-up" data-aos-duration="3000">
+            <div>
                 <b>О компании</b>
                 <p><a href="#"
                         class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Контакты</a>
@@ -558,7 +576,7 @@
                         class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                         Партнерская программа</a></p>
             </div>
-            <div data-aos="fade-up" data-aos-duration="3000">
+            <div>
                 <b>Покупателю</b>
                 <p><a href="#"
                         class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Помощь
@@ -589,7 +607,7 @@
 
 
             </div>
-            <div data-aos="fade-up" data-aos-duration="3000">
+            <div>
                 <b>Покупателю</b>
                 <p><a href="#"
                         class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Помощь
@@ -610,7 +628,7 @@
 
 
             </div>
-            <div data-aos="fade-up" data-aos-duration="3000">
+            <div>
                 <b>Правовая информация
                 </b>
                 <p><a href="#"
@@ -637,7 +655,7 @@
 
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="3000">
+            <div>
                 <img width="200px" height="87" src="./assets/icons/Logo.png" alt="">
                 <p class="text-secondary text-sm-end">© 2022 «Texnostore»</p>
                 <div class=" gap-2 d-flex justify-content-end">
