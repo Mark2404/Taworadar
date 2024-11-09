@@ -31,6 +31,30 @@
             transition: transform 0.3s ease;
 
         }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: yellowgreen;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        #myBtn:hover {
+            background-color: #4ffb68;
+        }
+
+        body {
+            scroll-behavior: smooth;
+
+        }
     </style>
 </head>
 
@@ -69,7 +93,8 @@
             <div class="d-flex align-items-center gap-3 justify-content-center text-decoration-none text-black">
                 <div class="d-flex align-items-center gap-1 flex-column text-decoration-none">
                     <img src="./assets/icons/User.svg" alt="">
-                    <a class="text-decoration-none text-black" href="#">Войти</a>
+                    <a class="text-decoration-none text-black" data-bs-toggle="modal" data-bs-target="#loginModal"
+                        href="#">Войти</a>
                 </div>
                 <div class="d-flex align-items-center gap-1 flex-column text-decoration-none">
                     <img src="./assets/icons/handbag_shopping_icon.svg" alt="">
@@ -85,7 +110,24 @@
                 </div>
             </div>
         </div>
+        <div>
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title fw-bold fs-4" id="loginModalLabel">
+                                Войдите по почте
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="email" placeholder="e-mail" />
+                                </div>
     </header>
+
     <div " id=" carouselExampleFade" class="carousel slide carousel-fade xl-container mt-5 ">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -543,7 +585,7 @@
     </div>
     <footer style="background-color:  #eef1f2;" class="bg-light-subtle p-2">
         <div class="container-xl mt-5 d-flex justify-content-between gap-5">
-            <div data-aos="fade-up" data-aos-duration="3000">
+            <div>
                 <b>О компании</b>
                 <p><a href="#"
                         class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Контакты</a>
@@ -558,7 +600,7 @@
                         class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                         Партнерская программа</a></p>
             </div>
-            <div data-aos="fade-up" data-aos-duration="3000">
+            <div>
                 <b>Покупателю</b>
                 <p><a href="#"
                         class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Помощь
@@ -589,7 +631,7 @@
 
 
             </div>
-            <div data-aos="fade-up" data-aos-duration="3000">
+            <div>
                 <b>Покупателю</b>
                 <p><a href="#"
                         class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Помощь
@@ -610,7 +652,7 @@
 
 
             </div>
-            <div data-aos="fade-up" data-aos-duration="3000">
+            <div>
                 <b>Правовая информация
                 </b>
                 <p><a href="#"
@@ -637,7 +679,7 @@
 
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="3000">
+            <div>
                 <img width="200px" height="87" src="./assets/icons/Logo.png" alt="">
                 <p class="text-secondary text-sm-end">© 2022 «Texnostore»</p>
                 <div class=" gap-2 d-flex justify-content-end">
@@ -648,7 +690,8 @@
             </div>
         </div>
     </footer>
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img style="width: 15px; height: 15px"
+            src="../assets/icons/up-arrow.png" alt=""></button>
 
 
 
@@ -658,11 +701,35 @@
 
 </body>
 
-
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+<script>
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function () { scrollFunction() };
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    document.getElementById('myBtn').addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+
+</script>
+
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
