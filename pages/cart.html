@@ -11,18 +11,44 @@
     />
 
     <title>Tavoradar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .p {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #333232;
+      }
+    </style>
   </head>
-  <body class="xl-container">
+  <body class="container-xl">
     <header
       class="d-flex container-xl align-items-center justify-content-center justify-content-sm-between p-2"
     >
       <div
         class="d-flex align-items-center gap-3 justify-content-center flex-column me-4"
       >
-        <img width=" 200" height="87" src="../assets/icons/Logo.png" alt="" role="button"/>
+        <img
+          width=" 200"
+          height="87"
+          src="../assets/icons/Logo.png"
+          alt=""
+          role="button"
+        />
         <div class="d-flex align-items-center gap-2">
           <img src="./assets/icons/location-icon.svg" alt="" />
-          <select class="bg-transparent border-0  d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" name="Shahar" id="Shahar" role="button">
+          <select
+            class="bg-transparent border-0 d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2"
+            name="Shahar"
+            id="Shahar"
+            role="button"
+          >
             <option value="Tashkent" selected>Tashkent, Uzbekistan</option>
             <option value="Samarqanq">Samarqanq, Uzbekistan</option>
             <option value="Navoiy">Navoiy, Toshkent</option>
@@ -58,34 +84,166 @@
           class="d-flex align-items-center gap-3 justify-content-center text-decoration-none text-black"
         >
           <div
-            class="d-flex align-items-center gap-1 flex-column text-decoration-none"role="button"
+            class="d-flex align-items-center gap-1 flex-column text-decoration-none"
+            role="button"
           >
             <img src="../assets/icons/User.svg" alt="" />
             <a class="text-decoration-none text-black" href="#">Войти</a>
           </div>
           <div
-            class="d-flex align-items-center gap-1 flex-column text-decoration-none"role="button"
+            class="d-flex align-items-center gap-1 flex-column text-decoration-none"
+            role="button"
+            onclick="window.location.href = '../index.html'"
           >
             <img src="../assets/icons/handbag_shopping_icon.svg" alt="" />
-            <a class="text-decoration-none text-black" href="#">Заказы</a>
+            <a class="text-decoration-none text-black" href="../index.html"
+              >Заказы</a
+            >
           </div>
           <div
-            class="d-flex align-items-center gap-1 flex-column text-decoration-none"role="button"
+            class="d-flex align-items-center gap-1 flex-column text-decoration-none"
+            role="button"
           >
             <img src="../assets/icons/heart.svg" alt="" />
             <a class="text-decoration-none text-black" href="#">Избранные</a>
           </div>
           <div
-            class="d-flex align-items-center gap-1 flex-column text-decoration-none " role="button"
+            class="d-flex align-items-center gap-1 flex-column text-decoration-none"
+            role="button"
           >
             <img src="../assets/icons/shopping-cart.svg" alt="" />
-            <a class="text-decoration-none text-black" href="./pages/cart.html"
-              >Корзина</a
-            >
+            <a class="text-decoration-none text-black" href="#">Корзина</a>
           </div>
         </div>
       </div>
     </header>
+
+    <section class="container-xl mt-5 p-4">
+      <div class="d-flex">
+        <p class="text-secondary">Главная /</p>
+        <b>&nbsp;Корзина</b>
+      </div>
+      <div class="d-flex fs-2 fw-bold">
+        <p fs-2 fw-bold>Оформление товара</p>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <p class="text-secondary">ваш регион:</p>
+        <select
+          class="bg-transparent border-0 d-inline-flex focus-ring text-decoration-none border rounded-2 mb-3 text-primary"
+          name="Shahar"
+          id="Shahar"
+          role="button"
+        >
+          <option value="Tashkent" selected>Tashkent, Uzbekistan</option>
+          <option value="Samarqanq">Samarqanq, Uzbekistan</option>
+          <option value="Navoiy">Navoiy, Toshkent</option>
+        </select>
+      </div>
+    </section>
+    <section class="container-xl mt-2 p-4">
+      <div class="d-flex gap-3">
+        <div
+          style="width: 80%"
+          class="border border-secondary-subtle rounded p-4"
+        >
+          <h2 class="fw-bold">Заказ № 1</h2>
+          <p class="text-success fs-5">Магазин</p>
+          <div class="d-flex flex-column gap-5">
+            <div class="d-flex align-items-center gap-2">
+              <img
+                style="width: 94px; height: 120px"
+                src="../assets/imgs/Product Photo.png"
+                alt=""
+              />
+              <div style="margin-left: 30px;" class="d-flex flex-column gap-1 ">
+                <h3 class="fw-bold fs-5">
+                  Смартфон Xiaomi Mi 10T Pro <br />
+                  8GB/256GB (бирюзовый)
+                </h3>
+                <p class="text-secondary">код товара: 67998909</p>
+              </div>
+              <div style="margin-left: 150px;" class="d-flex align-items-center justify-content-center gap-3">
+                <div
+                  style="width: 30px; height: 30px"
+                  class="border rounded fw-bold d-flex align-items-center justify-content-center"
+                >
+                  <img style="width: 18px; height: 20px;" src="../assets/icons/minus-sign.png" alt="">
+                </div>
+                <p
+                  class="fw-bold d-flex align-items-center justify-content-center mb-1 fs-5"
+                >
+                  1
+                </p>
+                <div
+                  style="width: 30px; height: 30px"
+                  class="border rounded fw-bold d-flex align-items-center justify-content-center"
+                >
+                  <img style="width: 20px; height: 20px" src="../assets/icons/add.png" alt="">
+                </div>
+              </div>
+              <div style="margin-left: 50px;">
+                <b class="fw-bold fs-5">3000 ₽</b>
+              </div>
+              <div style="margin-left: 90px; ">
+                <img style="width: 40px; height: 40px;" src="../assets/icons/удалить.svg" alt="" />
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <img
+                style="width: 94px; height: 140px"
+                src="../assets/imgs/Product Photo (1).png"
+                alt=""
+              />
+              <div style="margin-left: 30px;" class="d-flex flex-column gap-1 ">
+                <h3 class="fw-bold fs-5 text-secondary">
+                  Умная лампа  Xiaomi Mi LED Smart <br> Bulb Warm White XMBGDP01YLK
+                </h3>
+                <p class="text-secondary">код товара: 67998909</p>
+              </div>
+              <div style="margin-left: 98px;" class="d-flex align-items-center justify-content-center gap-3">
+                <div
+                  style="width: 30px; height: 30px"
+                  class="border border-danger-subtle rounded fw-bold d-flex align-items-center justify-content-center"
+                >
+                  <img style="width: 18px; height: 20px;" src="../assets/icons/минус.svg" alt="">
+                </div>
+                <p
+                  class="fw-bold text-danger d-flex align-items-center justify-content-center mb-1 fs-5"
+                >
+                  1
+                </p>
+                <div
+                  style="width: 30px; height: 30px"
+                  class="border  border-danger-subtle rounded fw-bold d-flex align-items-center justify-content-center"
+                >
+                  <img style="width: 20px; height: 20px" src="../assets/icons/Vector.svg" alt="">
+                </div>
+              </div>
+              <div style="margin-left: 50px;">
+                <b class="fw-bold fs-5 text-secondary">3000 ₽</b>
+              </div>
+              <div style="margin-left: 90px; ">
+                <img style="width: 40px; height: 40px;" src="../assets/icons/удалить.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="width: calc(100% - 80%); height: 190px"
+          class="border border-secondary-subtle rounded p-4 d-flex flex-column justify-content-between justify-content-center"
+        >
+          <b class="fw-bold fs-4 mb-1">Ваш заказ</b>
+          <div class="d-flex justify-content-between">
+            <p class="fs-5 ">Товары (5)</p>
+            <b class="fw-bold fs-5">3000 ₽</b>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p class="fs-5 fw-bold">Итого:</p>
+            <b class="fw-bold fs-5">3000 ₽</b>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
